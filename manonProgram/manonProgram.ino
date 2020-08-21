@@ -19,7 +19,7 @@ void setup() {
 
     strip.begin();          // INITIALIZE NeoPixel strip object (REQUIRED)
     strip.show();           // Turn OFF all pixels ASAP
-    strip.setBrightness(20); // Set BRIGHTNESS (max = 255)
+    strip.setBrightness(35); // Set BRIGHTNESS (max = 255)
 
 }
 
@@ -44,7 +44,7 @@ void rainbow(int wait) {
                 }
             };
             if (test != true) {
-                strip.setPixelColor(i, 255, 255, 255, 10);
+                strip.setPixelColor(i, 255, 130, 0);
             } else {
                 strip.setPixelColor(i, strip.gamma32(strip.ColorHSV(pixelHue)));
             };
