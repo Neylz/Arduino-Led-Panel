@@ -24,11 +24,11 @@ void setup() {
 }
 
 void loop() {
-    rainbow(10);
+    rainbowManon(10);
 }
 
 
-void rainbow(int wait) {
+void rainbowManon(int wait) {
     int manon[61] = {1, 2, 3, 4, 5, 9, 15, 16, 17, 18, 19, 29, 30, 31, 32, 33, 36, 38, 43, 44, 45, 46, 47, 57, 58, 59, 60, 61, 65, 72, 73, 78, 79, 80, 81, 82, 92, 93, 94, 95, 96, 99, 103, 106, 107, 108, 109, 110, 120, 121, 122, 123, 124, 130, 136, 137, 141, 142, 143, 144, 145};
 
     for(long firstPixelHue = 0; firstPixelHue < 5*65536; firstPixelHue += 256) {
